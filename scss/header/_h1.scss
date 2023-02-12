@@ -1,0 +1,17 @@
+.heading{
+    text-align: center;
+    font-weight: 600;
+font-size: 90px;
+}
+
+.h1__span{
+    position: relative;
+    &::after{
+        content: url(../img/underline.png);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+    }
+}

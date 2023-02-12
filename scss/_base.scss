@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,16 +17,16 @@ body {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
   color: #78847D;
 }
 
 a {
   text-decoration: none;
   font-family: "Kaspersky Sans";
-}
-a:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 img {
@@ -55,15 +56,13 @@ button:active {
   outline: none;
 }
 
-[class*=container] {
+[class*="container"] {
   position: relative;
   margin: 0 auto;
   max-width: 69.8125rem;
   min-width: 20rem;
   padding: 0 15px;
-}
-@media (min-width: 69.8125rem) {
-  [class*=container] {
+  @media (min-width: 69.8125rem) {
     padding: 0;
   }
 }
@@ -78,9 +77,10 @@ button:active {
   margin-bottom: 1.3125rem;
   font-weight: 300;
   font-size: 1.3125rem;
-}
-.text:last-child {
-  margin-bottom: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .text--italic {
@@ -114,25 +114,3 @@ button:active {
 .text--line-through {
   text-decoration: line-through;
 }
-
-header {
-  color: #FFFFFF;
-}
-
-.heading {
-  text-align: center;
-  font-weight: 600;
-  font-size: 90px;
-}
-
-.h1__span {
-  position: relative;
-}
-.h1__span::after {
-  content: url(../img/underline.png);
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-}/*# sourceMappingURL=main.css.map */
